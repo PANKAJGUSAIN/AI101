@@ -4,18 +4,30 @@
 ---
 
 ## Table of Contents
+1. [Fundamentals of AI](#1-fundamentals-of-ai)
+   - [What is AI?](#what-is-ai)
+   - [Motive of AI](#motive-of-ai)
 
-1. [What is AI?](#what-is-ai)
-2. [Levels of Enterprise AI](#levels-of-enterprise-ai)
+2. [Levels of Enterprise AI](#2-levels-of-enterprise-ai)
    - [Automation](#automation--ai-does-it-for-you)
    - [Augmentation](#augmentation--ai-works-alongside-you)
    - [Agency](#agency--ai-acts-toward-goals)
-3. [AI Models](#ai-models)
+
+3. [AI Models](#3-ai-models)
    - [Machine Learning Models](#machine-learning-models)
    - [Deep Learning Models](#deep-learning-models)
    - [Generative AI Models](#generative-ai-models)
    - [Relationship Between AI, ML, Deep Learning and GenAI](#relationship-between-ai-ml-deep-learning-and-genai)
 
+4. [Generative AI](#4-generative-ai)
+   - [What Can Generative AI Generate?](#what-can-generative-ai-generate)
+   - [Examples of Generative AI](#examples-of-generative-ai)
+   - [Large Language Models (LLMs)](#large-language-models-llms)
+     - [What Are LLMs?](#what-are-llms)
+     - [How Do LLMs Work?](#how-do-llms-work)
+     - [GPT as a Leading Example](#gpt-as-a-leading-example)
+     - [Examples of LLMs](#examples-of-llms)
+     - [Practical Interview Example](#practical-interview-example)
 ---
 
 # 1. Fundamentals of AI 
