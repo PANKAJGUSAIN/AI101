@@ -59,7 +59,22 @@
 
 9. [Human-in-the-Loop (HITL)](#9-human-in-the-loop-hitl)
    - [Practical Example](#practical-example)
+  
+10. [RAG vs Fine-Tuning](#10-rag-vs-fine-tuning)
+   - [RAG (Retrieval-Augmented Generation)](#rag-retrieval-augmented-generation)
+     - [How It Works](#how-it-works)
+     - [Outcomes](#outcomes)
+   - [Fine-Tuning](#fine-tuning)
+     - [How It Works](#how-it-works-1)
+     - [Outcomes](#outcomes-1)
+   - [RAG vs Fine-Tuning](#rag-vs-fine-tuning)
 
+11. [AI Workflows vs AI Agents](#11-ai-workflows-vs-ai-agents)
+   - [AI Workflows](#ai-workflows)
+     - [Example](#example)
+   - [AI Agents](#ai-agents)
+     - [Example](#example-1)
+   - [AI Workflow vs AI Agent](#ai-workflow-vs-ai-agent)
 
 ---
 
@@ -91,6 +106,8 @@ Enterprise AI generally operates at three levels:
 - **Automation** — Executing structured tasks
 - **Augmentation** — Enhancing human judgment
 - **Agency** — Acting toward defined outcomes
+
+ Automation/Augmentation/Agency = HOW MUCH autonomy/control the AI has.
 
 ## Automation — AI Does It for You
 
@@ -532,3 +549,134 @@ The human can:
 This is an example of **Human-in-the-Loop**, because the AI assists with the decision while a human remains responsible for the final outcome.
 
 > **Key idea:** AI makes the recommendation; **the human remains in control of the decision.**
+
+# 10. RAG vs Fine-Tuning
+
+**RAG (Retrieval-Augmented Generation)** is a method where an AI model **retrieves relevant information from an external knowledge source** and then uses that information to generate an answer.
+
+> **RAG = AI + external knowledge**
+
+### How It Works
+
+1. Company documents and other knowledge sources are stored and indexed in a retrieval system.
+2. The user asks a question.
+3. The system retrieves the most relevant information.
+4. The retrieved information is provided to the AI model as context.
+5. The AI uses that context to generate the answer.
+
+### Outcomes
+
+* Reduces the risk of hallucinations
+* Provides answers based on relevant company-specific information
+* Allows the knowledge source to be updated without retraining the model
+
+---
+
+## Fine-Tuning
+
+**Fine-tuning** is a method of further training an existing AI model on a curated dataset of examples so that it learns **specific behaviors, patterns, formats, or task requirements**.
+
+> **Fine-tuning = AI + your company's patterns and desired behavior**
+
+### How It Works
+
+You provide examples such as:
+
+* Real emails and responses
+* Preferred tone and writing style
+* Specific input-output examples
+* Domain-specific task examples
+* Desired response formats
+
+The model learns patterns from these examples and becomes better at producing the desired type of output.
+
+### Outcomes
+
+1. More consistent outputs
+2. Better performance on specific, repeated tasks
+3. Better adherence to a desired style or format
+4. Ability to learn organization-specific response patterns
+
+---
+
+## RAG vs Fine-Tuning
+
+| RAG                                                       | Fine-Tuning                                                        |
+| --------------------------------------------------------- | ------------------------------------------------------------------ |
+| Provides the model with **external information**          | Changes the model's **learned behavior**                           |
+| Best for frequently changing knowledge                    | Best for consistent, repeated tasks                                |
+| Knowledge can be updated without retraining               | Requires another training process to update behavior               |
+| Helps answer questions using company-specific information | Helps the model respond in a specific style or format              |
+| Example: Internal company knowledge assistant             | Example: Generating customer emails in a company's preferred style |
+
+> **Key distinction:**
+> **RAG teaches the model what information to use. Fine-tuning teaches the model how to behave or respond.**
+
+
+# 11. AI Workflows vs AI Agents
+
+As AI capabilities evolve, two powerful ways of using AI are becoming increasingly common: **AI Workflows** and **AI Agents**.
+
+While both use AI to complete tasks, they differ in **how much control the AI has over the process**.
+
+Workflow/Agent = HOW the AI operates.
+
+## AI Workflows
+
+**AI Workflows follow a predefined sequence of steps.**
+
+The AI performs specific tasks within a structured process, making the flow **predictable, consistent, and easier to control**.
+
+### Example
+
+A document-processing workflow might:
+
+1. Upload a document
+2. AI summarizes the document
+3. AI extracts key points
+4. AI generates a report
+
+In this setup, the **steps and their order are predefined**.
+
+The AI does not independently decide what the next step should be.
+
+---
+
+## AI Agents
+
+**AI Agents are more autonomous.**
+
+They can **reason about a goal, decide what actions to take, use available tools, and adapt their approach based on the results** rather than simply following a fixed sequence of steps.
+
+### Example
+
+An AI agent could be given the goal:
+
+> "Monitor customer complaints daily and alert the team if negative sentiment increases by 20%."
+
+The agent could then:
+
+* Check customer feedback data regularly
+* Analyze sentiment trends
+* Compare changes over time
+* Determine whether the threshold has been crossed
+* Trigger an alert when the condition is met
+
+The exact sequence of actions can **change based on what the agent observes**.
+
+---
+
+## AI Workflow vs AI Agent
+
+| AI Workflow                               | AI Agent                                  |
+| ----------------------------------------- | ----------------------------------------- |
+| Follows predefined steps                  | Works toward a defined goal               |
+| More predictable                          | More adaptive                             |
+| Limited decision-making                   | Can make decisions within its permissions |
+| Usually follows a fixed sequence          | Can dynamically choose the next action    |
+| Best for structured, repeatable processes | Best for dynamic, multi-step tasks        |
+
+> **Key distinction:**
+> **AI Workflows follow a predefined path, while AI Agents decide how to achieve a goal within defined boundaries.**
+
+
