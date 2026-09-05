@@ -33,6 +33,14 @@
    - [Prompt](#prompt)
    - [Prompting](#prompting)
    - [Prompt Engineering](#prompt-engineering)
+  
+6. [Tokens](#6-tokens)
+   - [Examples](#examples)
+   - [Why Do Tokens Matter?](#why-do-tokens-matter)
+     - [Context Limit](#context-limit)
+     - [Accuracy and Quality](#accuracy-and-quality)
+     - [Why AI Can "Forget"](#why-ai-can-forget)
+     - [Efficiency](#efficiency)
 ---
 
 # 1. Fundamentals of AI 
@@ -285,5 +293,69 @@ It involves a conversational **back-and-forth**, where you refine your instructi
 
 It involves using structured approaches, instructions, context, constraints, and prompting techniques to improve the output.
 
+
+
 **Goal:** **Reliability and Scalability**
+
+---
+
+# 6. Tokens
+
+A **token** is a small unit of text that an AI model uses to process and generate language.
+
+AI models don't process text as complete sentences or words. Instead, the input is **broken down into smaller pieces called tokens**.
+
+A token can be:
+
+* A complete word — `"cat"`
+* Part of a word — `"un"` + `"believable"`
+* Punctuation — `"."`
+* Other parts of text
+
+The exact way text is split into tokens depends on the model and its tokenizer.
+
+### Examples
+
+For illustration, a tokenizer might split:
+
+```text
+"Apple" → 1 token
+
+"Unbelievable" → 2 tokens
+                ("un", "believable")
+
+"I love AI." → 4 tokens
+              ("I", "love", "AI", ".")
+```
+
+> **Note:** Token counts are model-dependent. The same text may be split differently by different AI models.
+
+---
+
+## Why Do Tokens Matter?
+
+### Context Limit
+
+Tokens determine **how much information an AI model can process at once**.
+
+If the conversation becomes too large and exceeds the model's context limit, older content may no longer be available to the model.
+
+### Accuracy and Quality
+
+Well-structured and focused prompts can help the model understand the task more clearly.
+
+However, **shorter prompts are not always better**. A concise prompt with the right context and instructions is generally more useful than simply minimizing the number of tokens.
+
+### Why AI Can "Forget"
+
+When the amount of input exceeds the model's available context window, earlier information may be dropped or become unavailable to the model.
+
+This can make it appear as though the AI has **forgotten** something from earlier in the conversation.
+
+### Efficiency
+
+More tokens generally mean more computation.
+
+Keeping prompts **focused and relevant** can reduce unnecessary token usage and make interactions more efficient.
+
 
