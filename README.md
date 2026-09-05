@@ -41,6 +41,15 @@
      - [Accuracy and Quality](#accuracy-and-quality)
      - [Why AI Can "Forget"](#why-ai-can-forget)
      - [Efficiency](#efficiency)
+    
+7. [Context Window](#7-context-window)
+   - [Why Does This Matter?](#why-does-this-matter)
+   - [How Does This Information Help You Design Better Prompts?](#how-does-this-information-help-you-design-better-prompts)
+     - [Front-load Critical Instructions](#front-load-critical-instructions)
+     - [Keep Prompts Focused](#keep-prompts-focused)
+     - [Reinforce Key Rules at Checkpoints](#reinforce-key-rules-at-checkpoints)
+
+
 ---
 
 # 1. Fundamentals of AI 
@@ -357,5 +366,83 @@ This can make it appear as though the AI has **forgotten** something from earlie
 More tokens generally mean more computation.
 
 Keeping prompts **focused and relevant** can reduce unnecessary token usage and make interactions more efficient.
+
+# 7. Context Window
+
+The **context window** is the maximum amount of information an AI model can process and consider at one time.
+
+It includes things such as:
+
+* Your current prompt
+* Previous messages in the conversation
+* Instructions provided to the model
+* Other relevant content included in the interaction
+
+Think of it like:
+
+* **Short-term memory** for the AI
+* A **backpack** that can only hold a certain number of tokens
+
+The size of the context window is measured in **tokens**.
+
+## Why Does This Matter?
+
+When the amount of information exceeds the model's available context window, some earlier information may no longer be available to the model.
+
+This can cause the AI to:
+
+* Ignore or lose track of earlier instructions
+* Repeat itself
+* Contradict previous answers
+* Lose structure or formatting
+* Miss important context from earlier in the conversation
+
+This isn't necessarily randomness—it can be a result of **context limitations**.
+
+## How Does This Information Help You Design Better Prompts?
+
+Understanding context windows helps you structure prompts and conversations more effectively.
+
+### Front-load Critical Instructions
+
+Put the most important rules, constraints, and requirements early in your prompt.
+
+For example:
+
+> **Important:** Answer using TypeScript, don't use external libraries, and explain the solution step by step.
+
+This makes the critical requirements explicit and easy for the model to identify.
+
+### Keep Prompts Focused
+
+Avoid unnecessarily long or repetitive instructions.
+
+Instead of putting a large amount of unrelated information into one prompt, **break complex tasks into smaller steps** when appropriate.
+
+For example:
+
+Instead of:
+
+> "Build the entire application, explain every design decision, write all the code, create tests, optimize it, and document everything..."
+
+Break it into stages:
+
+1. Design the architecture
+2. Implement the core functionality
+3. Add tests
+4. Review and optimize
+5. Document the solution
+
+### Reinforce Key Rules at Checkpoints
+
+For long conversations or multi-step tasks, repeat critical requirements when necessary.
+
+For example:
+
+> **Reminder:** Continue using TypeScript and React. Don't introduce additional libraries.
+
+This can help keep important constraints active throughout a long interaction.
+
+> **Key idea:** The context window determines how much information the model can consider at once. Good prompt design helps ensure that the most important information remains clear and relevant.
 
 
