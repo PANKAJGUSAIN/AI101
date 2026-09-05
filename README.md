@@ -145,4 +145,84 @@ A simple way to visualize the relationship:
 
 > Not every AI system uses machine learning, and not every deep learning model is generative.
 
+---
+
+# 4. Generative AI
+
+Generative AI is a **class of AI models that goes beyond analysis to create new, contextually relevant content** by learning the underlying structures and patterns within large-scale datasets.
+
+During training, these models learn how different elements relate to one another, whether in **language, images, audio, or other formats**.
+
+When prompted, they use this learned knowledge to generate new outputs by **predicting what best fits the given context**, rather than simply retrieving pre-existing answers.
+
+## What Can Generative AI Generate?
+
+* **Natural language** — Emails, reports, documentation, code
+* **Visual content** — Images, designs, illustrations
+* **Audio and video** — Speech, music, videos
+* **Structured outputs** — Summaries, insights, recommendations, JSON, etc.
+
+## Examples of Generative AI
+
+* ChatGPT
+* Microsoft Copilot
+* DALL·E
+* Midjourney
+* GitHub Copilot
+* Notion AI
+
+---
+
+# Large Language Models (LLMs)
+
+Among Generative AI models, **Large Language Models (LLMs)** have become one of the primary interfaces for interacting with AI through natural language.
+
+## What Are LLMs?
+
+Large Language Models (LLMs) are a specialized class of **Generative AI models trained on vast amounts of text data** to understand, interpret, and generate human language.
+
+They can perform tasks such as:
+
+* Answering questions
+* Summarizing content
+* Generating code
+* Translating languages
+* Writing and rewriting text
+* Analyzing text
+
+## How Do LLMs Work?
+
+LLMs learn statistical relationships between **tokens, words, phrases, and contexts** during training.
+
+When given a prompt, the model uses these learned patterns to **predict the most likely next token**, repeatedly generating a coherent response that aligns with the given context.
+
+> LLMs don't retrieve a pre-written answer from a database. They generate a response based on patterns learned during training and the context provided in the prompt.
+
+## GPT as a Leading Example
+
+**GPT (Generative Pre-trained Transformer)** is a widely used family of LLMs that demonstrates these capabilities.
+
+GPT models power applications such as:
+
+* Conversational AI
+* Coding copilots
+* Enterprise knowledge assistants
+* Content generation tools
+
+## Examples of LLMs
+
+Some leading LLM families that power language-based Generative AI applications include:
+
+* **GPT** — OpenAI
+* **Claude** — Anthropic
+* **Gemini** — Google
+* **LLaMA** — Meta
+
+### Practical Interview Example
+
+**Question:** *What's the difference between Generative AI and an LLM?*
+
+**Answer:**
+
+> Generative AI is the broader category of AI systems that can generate new content such as text, images, audio, or video. An LLM is a specialized type of Generative AI model focused primarily on understanding and generating language.
 
