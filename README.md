@@ -48,6 +48,17 @@
      - [Front-load Critical Instructions](#front-load-critical-instructions)
      - [Keep Prompts Focused](#keep-prompts-focused)
      - [Reinforce Key Rules at Checkpoints](#reinforce-key-rules-at-checkpoints)
+    
+8. [Bias vs Hallucination in AI](#8-bias-vs-hallucination-in-ai)
+   - [Bias](#bias)
+     - [Examples](#examples)
+     - [How to Reduce Bias](#how-to-reduce-bias)
+   - [Hallucination](#hallucination)
+     - [Examples](#examples-1)
+     - [How to Reduce Hallucinations](#how-to-reduce-hallucinations)
+
+9. [Human-in-the-Loop (HITL)](#9-human-in-the-loop-hitl)
+   - [Practical Example](#practical-example)
 
 
 ---
@@ -446,3 +457,78 @@ This can help keep important constraints active throughout a long interaction.
 > **Key idea:** The context window determines how much information the model can consider at once. Good prompt design helps ensure that the most important information remains clear and relevant.
 
 
+# 8. Bias vs. Hallucination in AI
+
+AI systems can fail in two important ways: they can be **unfair**, or they can be **wrong**.
+
+**Bias** and **Hallucination** represent these two different risks.
+
+## Bias
+
+AI bias occurs when an AI system produces **unfair or skewed outcomes**, often because of biased, incomplete, or unrepresentative data.
+
+### Examples
+
+* Favouring certain groups
+* Providing unequal recommendations
+* Disadvantaging individuals or groups based on limited or unrepresentative data
+
+### How to Reduce Bias
+
+* **Testing for fairness**
+* **Ensuring diverse and representative data**
+* **Keeping human oversight**
+* **Continuous monitoring and evaluation**
+
+---
+
+## Hallucination
+
+AI hallucination occurs when an AI system **confidently generates information that is incorrect, fabricated, or not supported by reliable evidence**.
+
+### Examples
+
+* Fake statistics
+* Incorrect facts
+* Invented references or citations
+
+### How to Reduce Hallucinations
+
+* **Giving clear and specific prompts**
+* **Providing relevant context**
+* **Verifying important outputs**
+* **Using AI as a co-pilot, not a replacement**
+
+> **Key distinction:** Bias results in **unfair or skewed outcomes**, while hallucination results in **incorrect or fabricated information**.
+
+---
+
+# 9. Human-in-the-Loop (HITL)
+
+**Human-in-the-Loop (HITL)** means a human remains involved at key points of an AI process — reviewing, correcting, approving, or overriding the AI's output.
+
+It ensures that **AI doesn't operate completely on its own**, especially in situations where:
+
+* Judgment is needed
+* Context matters
+* Risks are high
+* People may be affected
+
+### Practical Example
+
+**AI-powered loan approval:**
+
+An AI system analyses a customer's financial information and recommends whether a loan should be approved.
+
+Instead of automatically approving or rejecting the application, a **human loan officer reviews the AI's recommendation** and makes the final decision.
+
+The human can:
+
+* **Approve** the recommendation
+* **Reject** the recommendation
+* **Override** the AI's decision
+* **Request additional information**
+
+This is an example of **Human-in-the-Loop**, because the AI assists with the decision while a human remains responsible for the final outcome.
+
+> **Key idea:** AI makes the recommendation; **the human remains in control of the decision.**
