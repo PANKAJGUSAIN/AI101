@@ -76,6 +76,14 @@
      - [Example](#example-1)
    - [AI Workflow vs AI Agent](#ai-workflow-vs-ai-agent)
 
+12. [Additional AI Concepts](#12-additional-ai-concepts)
+   - [Confidence Score](#confidence-score)
+   - [Embeddings](#embeddings)
+   - [AI Guardrails](#ai-guardrails)
+   - [Temperature](#temperature)
+   - [Model Drift](#model-drift)
+   - [Input Controls](#input-controls)
+
 ---
 
 # 1. Fundamentals of AI 
@@ -678,5 +686,118 @@ The exact sequence of actions can **change based on what the agent observes**.
 
 > **Key distinction:**
 > **AI Workflows follow a predefined path, while AI Agents decide how to achieve a goal within defined boundaries.**
+
+
+# 12. Additional AI Concepts
+
+Here are a few additional concepts that help strengthen your understanding of how AI systems work behind the scenes.
+
+## Confidence Score
+
+A **confidence score** indicates how confident a model is in its prediction or classification.
+
+For example:
+
+* **High confidence (≥80%)** → Usually indicates stronger model confidence
+* **Medium confidence (50–79%)** → May require additional context or review
+* **Low confidence (<50%)** → May require verification or escalation
+
+> **Important:** A confidence score reflects the model's **confidence in its prediction**, not necessarily the factual correctness of the answer.
+
+For example, an AI model could confidently provide an incorrect answer. Therefore, **high confidence does not guarantee correctness**.
+
+---
+
+## Embeddings
+
+**Embeddings are numerical representations of text or other data that capture semantic meaning and relationships.**
+
+Instead of treating text only as individual words, embeddings represent the meaning of the content as a vector of numbers.
+
+Embeddings are commonly used to:
+
+1. **Compare similarity** between pieces of content
+2. **Retrieve relevant information** in RAG systems
+3. **Find semantically related content**, even when the exact words are different
+
+### Example
+
+Consider these two sentences:
+
+> "How do I reset my password?"
+
+> "I forgot my login password. How can I change it?"
+
+Although the wording is different, their embeddings can be close in vector space because they have similar meaning.
+
+---
+
+## AI Guardrails
+
+**AI guardrails are controls and rules designed to prevent harmful, unsafe, inappropriate, or non-compliant AI behavior.**
+
+They can help control:
+
+* Profanity and inappropriate content
+* Confidential data leakage
+* Harmful or unsafe instructions
+* Unauthorized actions
+* Policy or regulatory violations
+
+Guardrails are especially important in **enterprise AI systems**, where security, privacy, compliance, and reliability are critical.
+
+---
+
+## Temperature
+
+**Temperature controls the randomness of a model's output.**
+
+A lower temperature generally produces **more predictable and consistent responses**, while a higher temperature can produce **more varied and creative responses**.
+
+* **Low (0.0–0.3)** → More stable and consistent
+* **Medium (0.4–0.7)** → Balanced
+* **High (0.8–1.0)** → More varied and creative
+
+### Example
+
+For generating a database query or structured JSON, a **lower temperature** is generally preferred.
+
+For brainstorming names or creative writing, a **higher temperature** may be useful.
+
+> **Note:** Temperature behavior and supported ranges depend on the specific model and API.
+
+---
+
+## Model Drift
+
+**Model drift occurs when a model's performance or accuracy changes over time because the real-world data or patterns it encounters have changed.**
+
+For example, a model trained to detect fraudulent transactions may become less effective as fraud patterns evolve.
+
+To maintain reliability, organizations may use:
+
+* Regular monitoring
+* Performance evaluation
+* Updated training data
+* Model retraining or updating
+* Human oversight
+
+---
+
+## Input Controls
+
+**Input controls define what users are allowed or advised to enter into an AI system.**
+
+They help protect sensitive information and reduce security and privacy risks.
+
+### Avoid Sharing
+
+* **PII (Personally Identifiable Information)**
+* **Confidential company data**
+* **Customer-specific information**
+* **Passwords, API keys, or other credentials**
+* Other sensitive information that the AI system is not authorized to process
+
+> **Key idea:** Before providing information to an AI system, consider whether the system is **authorized and designed to handle that information**.
 
 
