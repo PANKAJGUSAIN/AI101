@@ -28,6 +28,11 @@
      - [GPT as a Leading Example](#gpt-as-a-leading-example)
      - [Examples of LLMs](#examples-of-llms)
      - [Practical Interview Example](#practical-interview-example)
+
+5. [Prompt, Prompting, and Prompt Engineering](#5-prompt-prompting-and-prompt-engineering)
+   - [Prompt](#prompt)
+   - [Prompting](#prompting)
+   - [Prompt Engineering](#prompt-engineering)
 ---
 
 # 1. Fundamentals of AI 
@@ -237,4 +242,48 @@ Some leading LLM families that power language-based Generative AI applications i
 **Answer:**
 
 > Generative AI is the broader category of AI systems that can generate new content such as text, images, audio, or video. An LLM is a specialized type of Generative AI model focused primarily on understanding and generating language.
+
+---
+
+# 5. Prompt, Prompting, and Prompt Engineering
+
+The way you communicate with AI significantly influences the quality of the output.
+
+Although **prompt, prompting, and prompt engineering** sound similar, they refer to different concepts and represent different levels of interaction with AI.
+
+## Prompt
+
+A **prompt** is the specific input you provide to an AI system to get a desired response.
+
+It can include:
+
+* Text
+* Images
+* Files
+* Instructions
+* Questions
+
+A prompt is essentially a **single unit of communication** with the AI.
+
+**Goal:** **Clarity**
+
+---
+
+## Prompting
+
+**Prompting** is the act of interacting with AI through prompts and iterating on the responses to achieve a useful result.
+
+It involves a conversational **back-and-forth**, where you refine your instructions based on the AI's output.
+
+**Goal:** **Refinement**
+
+---
+
+## Prompt Engineering
+
+**Prompt engineering** is the intentional design and optimization of prompts to help AI understand the task and produce **reliable, consistent, and high-quality results**.
+
+It involves using structured approaches, instructions, context, constraints, and prompting techniques to improve the output.
+
+**Goal:** **Reliability and Scalability**
 
